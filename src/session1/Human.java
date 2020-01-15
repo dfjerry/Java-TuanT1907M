@@ -1,4 +1,4 @@
-package com.company;
+package session1;
 
 public class Human {
 

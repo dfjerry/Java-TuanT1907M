@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Labs6.Show">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="252.0" prefWidth="563.0">
+         <children>
+            <TableView fx:id="table1" layoutX="8.0" prefHeight="246.0" prefWidth="552.0">
+              <columns>
+                <TableColumn fx:id="id1Column" prefWidth="38.0" text="Id" />
+                <TableColumn fx:id="name1Column" prefWidth="168.0" text="Name" />
+                  <TableColumn fx:id="descr1Column" prefWidth="145.0" text="Desc" />
+                  <TableColumn fx:id="price1Column" prefWidth="93.0" text="Price" />
+                  <TableColumn fx:id="amount1Column" prefWidth="107.0" text="Amount" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Button layoutX="172.0" layoutY="283.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="26.0" layoutY="283.0" mnemonicParsing="false" onAction="#cart" text="Cart" />
+      <Text layoutX="235.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="235.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc" />
+      <Text layoutX="235.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text layoutX="213.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+      <TextField fx:id="txtName" layoutX="275.0" layoutY="299.0" />
+      <TextField fx:id="txtDesc" layoutX="275.0" layoutY="340.0" />
+      <TextField fx:id="txtPrice" layoutX="275.0" layoutY="381.0" />
+      <TextField fx:id="txtAmount" layoutX="275.0" layoutY="424.0" />
+   </children>
+</AnchorPane>

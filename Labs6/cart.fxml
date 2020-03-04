@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Labs6.Cart">
+   <children>
+      <TableView layoutX="14.0" layoutY="8.0" prefHeight="200.0" prefWidth="485.0">
+        <columns>
+          <TableColumn prefWidth="188.0" text="Name" />
+            <TableColumn prefWidth="57.0" text="Price" />
+            <TableColumn prefWidth="84.0" text="Amount" />
+            <TableColumn prefWidth="155.0" text="Total" />
+        </columns>
+      </TableView>
+      <ListView layoutX="15.0" layoutY="208.0" prefHeight="39.0" prefWidth="485.0" />
+      <Button layoutX="15.0" layoutY="266.0" mnemonicParsing="false" onAction="#goBackMain" text="Back to Products" />
+      <Label fx:id="idLabel" layoutX="35.0" layoutY="320.0" text="Label" />
+      <Label fx:id="nameLabel" layoutX="104.0" layoutY="320.0" text="Label" />
+      <Label fx:id="descLabel" layoutX="164.0" layoutY="320.0" text="Label" />
+      <Label fx:id="priceLabel" layoutX="240.0" layoutY="320.0" text="Label" />
+      <Label fx:id="amountLabel" layoutX="319.0" layoutY="320.0" text="Label" />
+   </children>
+</AnchorPane>

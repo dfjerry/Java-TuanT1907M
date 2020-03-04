@@ -20,19 +20,23 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Set;
 import java.util.Stack;
-//Step 1
 import java.sql.*;
 public class Main extends Application {
-
-
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
     public static void main(String[] args) {
         launch(args);
     }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+            primaryStage.setTitle("Nhập Thông tin sinh viên");
+            primaryStage.setScene(new Scene(root,1000,600));
+            primaryStage.show();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+    }
+
 }

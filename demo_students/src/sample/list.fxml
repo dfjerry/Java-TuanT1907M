@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment5.List" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id = "lsView" layoutX="30.0" layoutY="41.0" prefHeight="200.0" prefWidth="534.0" />
+      <Button onAction="#form" layoutX="30.0" layoutY="355.0" mnemonicParsing="false" text="Add" />
+   </children>
+</Pane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="session6.List">
+   <children>
+      <ListView fx:id="lsView" layoutX="42.0" layoutY="34.0" prefHeight="200.0" prefWidth="429.0" />
+      <Button onAction="#form" layoutX="42.0" layoutY="256.0" mnemonicParsing="false" text="+" />
+      <Button  layoutX="42.0" layoutY="309.0" mnemonicParsing="false" text="Cart" />
+      <Button  layoutX="41.0" layoutY="355.0" mnemonicParsing="false" text="Add to cart" />
+   </children>
+</AnchorPane>

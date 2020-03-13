@@ -8,12 +8,15 @@ public class Main {
         ContactList contact = new ContactList();
         Scanner sc = new Scanner(System.in);
         int choice = 0;
-        String name, company, email, phoneNumber;
+        String name = null;
+        String company = null;
+        String email = null;
+        String phoneNumber = null;
         do {
             System.out.println("1. Add new contact.");
             System.out.println("2. Find a contact by name.");
-            System.out.println("3. Display contact");
-            System.out.println("4. Exit");
+            System.out.println("3. Display contact.");
+            System.out.println("4. Exit!!!");
             System.out.println("======================");
             System.out.println("Choice your option: ");
             choice = sc.nextInt();
@@ -30,7 +33,7 @@ public class Main {
                     contact.addContact(new Contact(name, company, email, phoneNumber));
                     break;
                 case 2:
-                    System.out.println("Enter name: ");
+                    System.out.println("Enter the contact name you want to find: ");
                     contact.findContact(sc.next());
                     break;
                 case 3:
